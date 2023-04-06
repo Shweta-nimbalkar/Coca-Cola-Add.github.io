@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 85vh;
+    background-image: url('c1.png');
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2px 0;
+
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+
+}
+
+nav ul li a::after {
+    content: '';
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 50px;
+}
+
+.text-box {
+    color: black;
+    position: absolute;
+    bottom: 10%;
+}
+
+.text-box p {
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.text-box h1 {
+    font: size 50px;
+    line-height: 150px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px blue;
+    background: url('picture.png');
+    -webkit-background-clip:text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000PX 0;
+    }
+}
+
+.text-box h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.row {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.text-box a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid black;
+}
+
+.social_icons {
+    position: absolute;
+    right: 5%;
+    /* bottom: 8%; */
+}
+
+.social_icons img {
+    width: 32px;
+    border-radius: 30px;
+    display:inline-block;
+    margin: 6px 5px;
+}
+
+.social_icons a img:hover {
+    box-sizing: border-box;
+}
+.footer {
+    width: 100%;
+    height: 15vh;
+    background: lightcoral;
+}
+.footer ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 50px;
+}
+.footer ul li a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+
+
+}
+ .footer ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+ }
+ .footer h3 {
+    font-style: italic;
+    margin-left: 10px;
+
+ }
+ .para {
+    margin-bottom:10px;
+ }
